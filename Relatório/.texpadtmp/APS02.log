@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.11)  21 MAY 2016 22:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.11)  25 MAY 2016 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -717,7 +717,7 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 \pgf@circ@res@step=\dimen189
 \pgf@circ@res@temp=\dimen190
 \pgfstartlinewidth=\dimen191
-)) (/Users/rafaelbonotto/Documents/UTFPR/Aulas e Materiais/7º Semestre/Planejamentos de Sistemas Energéticos/APS 2/Relatório/.texpadtmp/APS02.aux)
+)) (/Users/rafaelbonotto/Documents/GitHub/APS02_Planejamento/aps02_planejamento/Relatório/.texpadtmp/APS02.aux)
 \openout1 = `APS02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -794,7 +794,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 36.
- (/Users/rafaelbonotto/Documents/UTFPR/Aulas e Materiais/7º Semestre/Planejamentos de Sistemas Energéticos/APS 2/Relatório/.texpadtmp/APS02.toc)
+ (/Users/rafaelbonotto/Documents/GitHub/APS02_Planejamento/aps02_planejamento/Relatório/.texpadtmp/APS02.toc)
 \tf@toc=\write4
 \openout4 = `APS02.toc'.
 
@@ -825,7 +825,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 97.
  [3] [4]) [5]
 Cap\'{\i }tulo 2.
-(./parte2.tex) (/Users/rafaelbonotto/Documents/UTFPR/Aulas e Materiais/7º Semestre/Planejamentos de Sistemas Energéticos/APS 2/Relatório/.texpadtmp/APS02.bbl [6
+(./parte2.tex) (/Users/rafaelbonotto/Documents/GitHub/APS02_Planejamento/aps02_planejamento/Relatório/.texpadtmp/APS02.bbl [6
 
 ]
 
@@ -847,17 +847,17 @@ AED: lastpage setting LastPage
 \outputstream=\write5
 \openout5 = `APS02.tmp'.
 
-(/Users/rafaelbonotto/Documents/UTFPR/Aulas e Materiais/7º Semestre/Planejamentos de Sistemas Energéticos/APS 2/Relatório/.texpadtmp/APS02.aux) ) 
+(/Users/rafaelbonotto/Documents/GitHub/APS02_Planejamento/aps02_planejamento/Relatório/.texpadtmp/APS02.aux) ) 
 Here is how much of TeX's memory you used:
  20758 strings out of 493089
- 459055 string characters out of 6134842
+ 458635 string characters out of 6134842
  586278 words of memory out of 5000000
  23818 multiletter control sequences out of 15000+600000
  26728 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,56p,429b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/rafaelbonotto/Documents/UTFPR/Aulas e Materiais/7º Semestre/Planejamentos de Sistemas Energéticos/APS 2/Relatório/.texpadtmp/APS02.pdf" (8 pages, 157693 bytes).
+Output written on /Users/rafaelbonotto/Documents/GitHub/APS02_Planejamento/aps02_planejamento/Relatório/.texpadtmp/APS02.pdf (8 pages, 157792 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

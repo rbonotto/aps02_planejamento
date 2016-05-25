@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: /Users/rafaelbonotto/Documents/UTFPR/Aulas e Materiais/7º Semestre/Planejamentos de Sistemas Energéticos/APS 2/Relatório/.texpadtmp/APS02.aux
+The top-level auxiliary file: /Users/rafaelbonotto/Documents/GitHub/APS02_Planejamento/aps02_planejamento/Relatório/.texpadtmp/APS02.aux
 The style file: ../abnt-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -24,7 +24,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 5 entries,
             6480 wiz_defined-function locations,
-            1163 strings with 9531 characters,
+            1163 strings with 9455 characters,
 and the built_in function-call counts, 1990 in all, are:
 = -- 244
 > -- 3
