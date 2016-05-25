@@ -1,0 +1,11 @@
+\select@language {brazil}
+\contentsline {chapter}{\numberline {1}Fluxo de pot\IeC {\^e}ncia \IeC {\'o}timo linearizado}{2}
+\contentsline {section}{\numberline {1.1}Contextualiza\IeC {\c c}\IeC {\~a}o da atividade}{2}
+\contentsline {section}{\numberline {1.2}Resolu\IeC {\c c}\IeC {\~a}o do problema proposto}{3}
+\contentsline {subsection}{\numberline {1.2.1}Equacionamento e defini\IeC {\c c}\IeC {\~a}o de m\IeC {\'e}todos}{3}
+\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}lculo dos par\IeC {\^a}metros}{4}
+\contentsline {chapter}{\numberline {2}Fluxo de pot\IeC {\^e}ncia linearizado: Condi\IeC {\c c}\IeC {\~a}o normal e de emerg\IeC {\^e}ncia}{6}
+\contentsline {section}{\numberline {2.1}Contextualiza\IeC {\c c}\IeC {\~a}o da atividade}{6}
+\contentsline {section}{\numberline {2.2}Resolu\IeC {\c c}\IeC {\~a}o do problema proposto}{6}
+\contentsline {subsection}{\numberline {2.2.1}Equacionamento e defini\IeC {\c c}\IeC {\~a}o de m\IeC {\'e}todos}{6}
+\contentsline {subsection}{\numberline {2.2.2}C\IeC {\'a}lculo dos par\IeC {\^a}metros}{6}

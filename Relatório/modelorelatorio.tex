@@ -1,0 +1,70 @@
+\documentclass[capchap,sumarioincompleto,a4paper,12pt,ruledheader,normaltoc]{utfprtex}%
+\usepackage[utf8]{inputenc}
+\usepackage{utfprtexPropostaTCC}
+\usepackage[brazil]{babel}
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-text=it,bibjustif,abnt-etal-cite=2,abnt-etal-list=0,abnt-full-initials=yes]{abntcite}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{circuitikz}
+\usepackage{multicol}
+\usepackage{tikz}
+\renewcommand{\floatpagefraction}{0.90}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\setlength{\intextsep}{5pt}
+\setlength{\textfloatsep}{5pt}
+\setlength{\floatsep}{5pt}
+
+%---------- Autores ----------
+
+\autorA{Rafael da Costa Bonotto}
+\autorB{Raphael Henrique Soares Machado}
+
+%---------- Título ----------
+
+\titulo{TITULO DE RELATORIO}
+\local{PATO BRANCO}
+\data{2015}
+
+\begin{document}
+
+\capa
+\newpage
+\sumario
+\newpage
+\newpage
+
+%---------- Primeiro Capitulo (Introdução)-------
+
+\chapter{Introdução}
+\input{Introducao}
+
+%---------- Segundo Capitulo ----------
+
+\chapter{Fundamentação Teórica}
+\input{fundamentacao}	
+
+%---------- Terceiro Capitulo ----------
+
+\chapter{Ensaio a vazio}
+\input{ensaiovazio}
+
+%---------- Quarto Capitulo ----------
+
+\chapter{Ensaio a Curto}
+\input{ensaiocurto}
+
+%---------- Quinto Capitulo (Conclusão)--------
+
+\chapter{Conclusão}
+\input{Conclusao}
+
+%---------- Referencias ----------
+
+\bibliography{referencias}
+
+%---------- Fim do documento ----------
+\end{document}

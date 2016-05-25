@@ -1,0 +1,55 @@
+\documentclass[capchap,sumarioincompleto,a4paper,12pt,ruledheader,normaltoc]{utfprtex}%
+\usepackage[utf8]{inputenc}
+\usepackage{utfprtexPropostaTCC}
+\usepackage[brazil]{babel}
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-text=it,bibjustif,abnt-etal-cite=2,abnt-etal-list=0,abnt-full-initials=yes]{abntcite}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{circuitikz}
+\usepackage{multicol}
+\usepackage{tikz}
+\renewcommand{\floatpagefraction}{0.90}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\setlength{\intextsep}{5pt}
+\setlength{\textfloatsep}{5pt}
+\setlength{\floatsep}{5pt}
+
+%---------- Autores ----------
+
+\autorA{Rafael da Costa Bonotto}
+\autorB{Raphael Henrique Soares Machado}
+
+%---------- Título ----------
+
+\titulo{Atividade Prática Supervisionada 02 - Fluxo de Potência - Relatório}
+\local{PATO BRANCO}
+\data{2016}
+
+\begin{document}
+
+\capa
+\newpage
+\sumario
+\newpage
+\newpage
+
+%---------- Segundo Capitulo ----------
+
+\chapter{Fluxo de potência ótimo linearizado}
+\input{parte1}	
+
+%---------- Terceiro Capitulo ----------
+
+\chapter{Fluxo de potência linearizado: Condição normal e de emergência}
+\input{parte2}
+
+%---------- Referencias ----------
+
+\bibliography{referencias}
+
+%---------- Fim do documento ----------
+\end{document}
