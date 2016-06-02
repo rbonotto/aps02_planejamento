@@ -177,11 +177,84 @@ A primeira parte da atividade exige que sejam determinados, utilizando o fluxo �
        \label{exp:RES2}
 	\end{equation}
 	
-	skfioakfaskfas
+	Com a função restrição geral proposta, é possível determinar a função de lagrange separadamente, a partir da Equação \ref{eq:res4}:
+	
+	\begin{align}
+		L =  5,61 + 7,92*P_1 + 0,001562*P_1^2 \label{lag1}\\
+		+ 310 + 7,85*P_2 + 0,00194*P_2^2
+			\label{lag2}\\ 
+		+ 78 + 7,97*P_3 + 0,00482*P_3^2 
+			\label{lag3}\\
+		+ \lambda{_1}(100*18*\theta{_1} + 100*-10*\theta{_2} + 100*-8*\theta{_3} - P_{G1} + P_{C1})
+			\label{lag4}\\
+		+ \lambda{_2}(100*-10*\theta{_1} + 100*15*\theta{_2} + 100*-5*\theta{_3} - P_{G2} + P_{C2})
+			\label{lag5}\\
+		+ \lambda{_3}(100*-8*\theta{_1} + 100*-5*\theta{_2} + 100*13*\theta{_3} - P_{G3} + P_{C3})
+			\label{lag6}\\
+		+ \lambda{_4}(\theta{_1} - 0)
+			\label{lag7}\\
+		+ \lambda{_5}(-150 + \frac{100*(\theta{_1} - \theta{_2})}{X_{12}}) \label{lag8}
+		\end{align}
+		
+		Derivando a Função de Lagrange, representada pelas Equações \ref{lag1} a \ref{lag8}, com relação as variáveis do problema, tem-se que: 
  	
- 	
-	
-	
-	
-	
+		\begin{align}
+			\frac{dL}{dP_{G1}} = 7,92 + 2*0,001562*P_{G1} - \lambda{_1} = 0
+			\label{derlag1}\\
+			\frac{dL}{dP_{G2}} = 7,85 + 2*0,000194*P_{G2} - \lambda{_2} = 0
+			\label{derlag2}\\
+			\frac{dL}{dP_{G3}} = 7,97 + 2*0,00482*P_{G3} - \lambda{_3} = 0
+			\label{derlag3}\\
+			\frac{dL}{d\theta{_1}} = 100*18*\lambda{_1} + 100*-10*\lambda{_2} + 100*-8*\lambda{_3} + \frac{100}{X_{12}}= 0
+			\label{derlag4}\\
+			\frac{dL}{d\theta{_2}} = 100*-10*\lambda{_1} + 100*15*\lambda{_2} + 100*-5*\lambda{_3} - \frac{100}{X_{12}} = 0
+			\label{derlag5}\\
+			\frac{dL}{d\theta{_3}} = 100*-8*\lambda{_1} + 100*-5*\lambda{_2} + 100*13*\lambda{_3} = 0
+			\label{derlag6}\\
+			\frac{dL}{d\lambda{_1}} = 100*18*\theta{_1} + 100*-10*\theta{_2} + 100*-8*\theta{_3} - P_{G1} + P_{C1} = 0
+			\label{derlag7}\\
+			\frac{dL}{d\lambda{_2}} = 100*-10*\theta{_1} + 100*15*\theta{_2} + 100*-5*\theta{_3} - P_{G2} + P_{C2} = 0
+			\label{derlag8}\\
+			\frac{dL}{d\lambda{_3}} = 100*-8*\theta{_1} + 100*-5*\theta{_2} + 100*13*\theta{_3} - P_{G3} + P_{C3} = 0
+			\label{derlag9}\\
+			\frac{dL}{d\lambda{_4}} = \theta{_1} = 0
+			\label{derlag10}\\
+			\frac{dL}{d\lambda{_5}} = -150 + \frac{100*(\theta{_1} - \theta{_2})}{X_{12}} = 0
+			\label{derlag11}
+		\end{align}
+		
+		Portanto, a matriz que apresenta as variáveis a serem obtidas é apresentadas da seguinte forma, conforme apresentado na Matriz \ref{exp:VAR}:
+		
+		
+		\begin{equation} 
+		\scriptsize
+       \begin{bmatrix}
+       	0,003124 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & 0\\
+       	0 & 0,00388 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0 & 0\\
+       	0 & 0 & 0,00482 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0\\
+       	0 & 0 & 0 & 0 & 0 & 0 & 1800 & -1000 & -800 & 0 & 0\\
+       	0 & 0 & 0 & 0 & 0 & 0 & -1000 & 1500 & -500 & 0 & 0\\
+       	0 & 0 & 0 & 0 & 0 & 0 & -800 & -500 & 1300 & 0 & 0\\
+       	-1 & 0 & 0 & 1800 & -1000 & -800 & 0 & 0 & 0 & 0 & 0\\
+       	0 & -1 & 0 & -1000 & 1500 & -500 & 0 & 0 & 0 & 0 & 0\\
+       	0 & 0 & -1 & -800 & -500 & 1300 & 0 & 0 & 0 & 0 & 0\\
+       	0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+       	0 & 0 & 0 & 1000 & -1000 & 0 & 0 & 0 & 0 & 0 & 0
+       	\end{bmatrix} *
+       \begin{bmatrix}
+       P_{G1} \\P_{G2} \\P_{G3} \\\theta{_1} \\\theta{_2} \\\theta{_3} \\\lambda{_1} \\\lambda{_2} \\\lambda{_3} \\\lambda{_4} \\\lambda{_5}\end{bmatrix} = 
+       \begin{bmatrix}
+        -7,92\\
+       	-7,85\\
+       	-7,97\\
+       	-1000\\
+       	1000\\
+       	0\\
+       	-200\\
+       	-550\\
+       	-100\\
+       	0\\
+       	150 \end{bmatrix}
+       \label{exp:VAR}
+	\end{equation}
 	
