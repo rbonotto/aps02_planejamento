@@ -11,77 +11,22 @@ format compact
 
 %% Parte 1 Fluxo de Potência Linearizado
 
-%Variáveis do sistema
-P1 = 0;
-P2 = 0;
-P3 = 0;
-Pgen1 = 0;
-Pgen2 = 0;
-Pgen3 = 0;
-teta1 = 0;
-teta2 = 0;
-teta3 = 0;
-lambda1 = 0;
-lambda2 = 0;
-lambda3 = 0;
-lambda4 = 0;
-lambda5 = 0;
+A = [0.003124 0 0 0 0 0 -1 0 0 0 0; 0 0.00388 0 0 0 0 0 -1 0 0 0; 0 0 2*0.00482 0 0 0 0 0 -1 0 0; 0 0 0 0 0 0 1800 -1000 -800 1 1000;0 0 0 0 0 0 -1000 1500 -500 0 -1000;0 0 0 0 0 0 -800 -500 1300 0 0;-1 0 0 1800 -1000 -800 0 0 0 0 0;0 -1 0 -1000 1500 -500 0 0 0 0 0;0 0 -1 -800 -500 1300 0 0 0 0 0;0 0 0 1 0 0 0 0 0 0 0;0 0 0 1000 -1000 0 0 0 0 0 0];
+B = [-7.92;-7.85;-7.97;0;0;0;-200;-550;-100;0;150];
 
-%Reatância da linha por unidade
+RESP = inv(A)*B;
 
-x12 = 0.1;
-x13= 0.125;
-x23 = 0.2;
-
-%Declaração das Equações
-
-custo1 = 561 + 7.92*P1 + 0.001562*P1^2;
-custo2 = 310 + 7.85*P2 + 0.00194*P2^2;
-custo3 = 078 + 7.97*P3 + 0.00482*P3^2;
-
-%Matriz Adimitância
-
-B11= 1/x12 + 1/x13;
-B12 = - 1/x12;
-B13 = - 1/x13;
-B21 = B12;
-B22 = 1/x12 + 1/x23;
-B23 = - 1/x23;
-B31 = B13;
-B32 = B23;
-B33 = 1/x13 + 1/x23;
-
-B = [B11 B12 B13; B21 B22 B23; B31 B32 B33];
-
-%Resposta
-
-A1 = [0.003124 0 0; 0 .00388 0; 0 0 .00964];
-A2 = [1800 -1000 -800; -1000 1500 -500; -800 -500 1300];
-A3 = [ 1 0; 0 0; 0 0];
-% A3 = [ 1 -B12; 0 B12; 0 0];
-A4 =  [0 1; 0 -1; 0 0];
-
-% A = [A1 zeros(3) -eye(3) zeros(3,1); zeros(3) zeros(3) A2 A3; -eye(3) A2 zeros(3) zeros(3,1); zeros(1,3) A3' zeros(1,3) 0]
-A = [A1 zeros(3) -eye(3) A4; zeros(3) zeros(3) A2 A3; -eye(3) A2 zeros(3) zeros(3,2); (A4)' (A3)' zeros(2,3) zeros(2)]
-
-% B= [-7.92; -7.85; -7.97; 0; 0; 0; -200; -550; -100; 0];
-B= [-7.92; -7.85; -7.97; 0; 0; 0; -200; -550; -100; 0; -200];
-
-resposta = inv(A)*B
-
-Pg1 = resposta(1)
-Pc1 = -B(7)
-P1 = Pg1 - Pc1
-Pg2 = resposta(2)
-Pc2 = -B(8)
-P2 = Pg2 - Pc2
-Pg3 = resposta(3)
-Pc3 = -B(9)
-P3 = Pg3 - Pc3
-
-P12 = 100*(resposta(4) - resposta(5))/ x12
-P13 = 100*(resposta(4) - resposta(6))/ x13
-P23 = 100*(resposta(5) - resposta(6))/ x23
+PG1 = RESP(1)
+PG2 = RESP(2)
+PG3 = RESP(3)
+Theta1 = RESP(4)
+Theta2 = RESP(5)
+Theta3 = RESP(6)
+Lambda1 = RESP(7)
+Lambda2 = RESP(8)
+Lambda3 = RESP(9)
+Lambda4 = RESP(10)
+Lambda5 = RESP(11)
 
 %% Parte 2 Fluxo de Potência Linearizado: Condição normal e de emergência
 
@@ -134,7 +79,7 @@ while (novo_cenario==1)
     disp('-----------------Escolha o Cenário---------------')
     disp('[1] - Considere o caso base (sem contingência)')
     disp('[2] - Contingência em cada linha (N – 1)')
-    disp('[3] - Contingência em cada linha (N – 1) com carga extra(%)')
+    disp('[3] - Contingência em cada linha (N – 1) com carga extra (%)')
     cenario= input('Escolha o cenário: ');
     if cenario==1 %Primeiro Cenário
         %Calculando a potência injetada nas barrras

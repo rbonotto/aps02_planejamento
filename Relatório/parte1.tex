@@ -205,9 +205,9 @@ A primeira parte da atividade exige que sejam determinados, utilizando o fluxo √
 			\label{derlag2}\\
 			\frac{dL}{dP_{G3}} = 7,97 + 2*0,00482*P_{G3} - \lambda{_3} = 0
 			\label{derlag3}\\
-			\frac{dL}{d\theta{_1}} = 100*18*\lambda{_1} + 100*-10*\lambda{_2} + 100*-8*\lambda{_3} + \frac{100}{X_{12}}= 0
+			\frac{dL}{d\theta{_1}} = 100*18*\lambda{_1} + 100*-10*\lambda{_2} + 100*-8*\lambda{_3} + \lambda{_4} + \frac{100}{X_{12}}*\lambda{_5} = 0
 			\label{derlag4}\\
-			\frac{dL}{d\theta{_2}} = 100*-10*\lambda{_1} + 100*15*\lambda{_2} + 100*-5*\lambda{_3} - \frac{100}{X_{12}} = 0
+			\frac{dL}{d\theta{_2}} = 100*-10*\lambda{_1} + 100*15*\lambda{_2} + 100*-5*\lambda{_3} - \frac{100}{X_{12}}*\lambda{_5} = 0
 			\label{derlag5}\\
 			\frac{dL}{d\theta{_3}} = 100*-8*\lambda{_1} + 100*-5*\lambda{_2} + 100*13*\lambda{_3} = 0
 			\label{derlag6}\\
@@ -231,9 +231,9 @@ A primeira parte da atividade exige que sejam determinados, utilizando o fluxo √
        \begin{bmatrix}
        	0,003124 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & 0\\
        	0 & 0,00388 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0 & 0\\
-       	0 & 0 & 0,00482 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0\\
-       	0 & 0 & 0 & 0 & 0 & 0 & 1800 & -1000 & -800 & 0 & 0\\
-       	0 & 0 & 0 & 0 & 0 & 0 & -1000 & 1500 & -500 & 0 & 0\\
+       	0 & 0 & 0,00964 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0\\
+       	0 & 0 & 0 & 0 & 0 & 0 & 1800 & -1000 & -800 & 1 & 1000\\
+       	0 & 0 & 0 & 0 & 0 & 0 & -1000 & 1500 & -500 & 0 & -1000\\
        	0 & 0 & 0 & 0 & 0 & 0 & -800 & -500 & 1300 & 0 & 0\\
        	-1 & 0 & 0 & 1800 & -1000 & -800 & 0 & 0 & 0 & 0 & 0\\
        	0 & -1 & 0 & -1000 & 1500 & -500 & 0 & 0 & 0 & 0 & 0\\
@@ -247,8 +247,8 @@ A primeira parte da atividade exige que sejam determinados, utilizando o fluxo √
         -7,92\\
        	-7,85\\
        	-7,97\\
-       	-1000\\
-       	1000\\
+       	0\\
+       	0\\
        	0\\
        	-200\\
        	-550\\
@@ -256,5 +256,25 @@ A primeira parte da atividade exige que sejam determinados, utilizando o fluxo √
        	0\\
        	150 \end{bmatrix}
        \label{exp:VAR}
+	\end{equation}
+	
+	Sendo assim, os seguintes valores de cada grandeza analisada est√£o representados na Equa√ß√£o \ref{exp:RESULTADO}.
+	
+	\begin{equation}
+		\begin{bmatrix}
+       P_{G1} \\P_{G2} \\P_{G3} \\\theta{_1} \\\theta{_2} \\\theta{_3} \\\lambda{_1} \\\lambda{_2} \\\lambda{_3} \\\lambda{_4} \\\lambda{_5}\end{bmatrix} = 
+       \begin{bmatrix}
+        382,72\\
+       	345,45\\
+       	121,82\\
+       	0\\
+       	-0,15\\
+       	-0,04\\
+       	9,11\\
+       	9,19\\
+       	9,14\\
+       	0\\
+       	0,09\end{bmatrix}
+		\label{exp:RESULTADO}
 	\end{equation}
 	

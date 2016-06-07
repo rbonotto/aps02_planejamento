@@ -4,8 +4,9 @@
 \contentsline {section}{\numberline {1.2}Resolu\IeC {\c c}\IeC {\~a}o do problema proposto}{3}
 \contentsline {subsection}{\numberline {1.2.1}Equacionamento e defini\IeC {\c c}\IeC {\~a}o de m\IeC {\'e}todos}{3}
 \contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}lculo dos par\IeC {\^a}metros}{4}
-\contentsline {chapter}{\numberline {2}Fluxo de pot\IeC {\^e}ncia linearizado: Condi\IeC {\c c}\IeC {\~a}o normal e de emerg\IeC {\^e}ncia}{7}
-\contentsline {section}{\numberline {2.1}Contextualiza\IeC {\c c}\IeC {\~a}o da atividade}{7}
-\contentsline {section}{\numberline {2.2}Resolu\IeC {\c c}\IeC {\~a}o do problema proposto}{7}
-\contentsline {subsection}{\numberline {2.2.1}Equacionamento e defini\IeC {\c c}\IeC {\~a}o de m\IeC {\'e}todos}{7}
-\contentsline {subsection}{\numberline {2.2.2}C\IeC {\'a}lculo dos par\IeC {\^a}metros}{7}
+\contentsline {chapter}{\numberline {2}Fluxo de pot\IeC {\^e}ncia linearizado: Condi\IeC {\c c}\IeC {\~a}o normal e de emerg\IeC {\^e}ncia}{8}
+\contentsline {section}{\numberline {2.1}Contextualiza\IeC {\c c}\IeC {\~a}o da atividade}{8}
+\contentsline {section}{\numberline {2.2}Resolu\IeC {\c c}\IeC {\~a}o do problema proposto}{9}
+\contentsline {subsection}{\numberline {2.2.1}Equacionamento e defini\IeC {\c c}\IeC {\~a}o de m\IeC {\'e}todos}{9}
+\contentsline {subsection}{\numberline {2.2.2}C\IeC {\'a}lculo dos par\IeC {\^a}metros}{9}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Valores das tens\IeC {\~o}es e fluxos de pot\IeC {\^e}ncia obtidos no MATLAB\IeC {\textregistered }}{10}
